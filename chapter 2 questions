@@ -1,0 +1,183 @@
+//chapter 2 questions
+
+//problem 1 
+/*
+# include <math.h>
+# include <stdio.h>
+int main()
+{   float a,b,c,sum,ans;
+	printf("enter threes sides of triangle\n");
+	scanf("%f %f %f",&a,&b,&c);
+	sum=(a+b+c)/2.0;
+	ans=sqrt(sum*(sum-a)*(sum-b)*(sum-c));
+	printf("area is %f",ans);	
+	return 0;
+}
+*/
+
+//problem 2
+/*
+# include <stdio.h>
+# include <math.h>
+int main()
+{   int num,rev,r1,r2,r3,r4,r5;
+	printf("enter an 5 digit number\n");
+	scanf("%d",&num);
+	r1=num%10;
+	num=num/10;
+	r2=num%10;
+	num=num/10;
+	r3=num%10;
+	num=num/10;
+	r4=num%10;
+	num=num/10;
+    rev=(r1*10000)+(r2*1000)+(r3*100)+(r4*10)+num;
+	printf("reverse number  is %d",rev);	
+}
+*/
+
+//problem 3
+/*
+# include <stdio.h>
+# include <math.h>
+int main()
+{   int r,r1,r2,r3,r4,r5,notes;
+	printf("enter amount in rupees\n");
+	scanf("%d",&r);
+	r1=r/100.0;
+	r=r%100;
+	r2=r/50.0;
+	r=r%50;
+	r3=r/10.0;
+	r=r%10;
+	r4=r/5.0;
+	r=r%5;
+	r5=r/2.0;
+	r=r%2;
+    notes=r1+r2+r3+r4+r5+r;
+	printf("smallest number of notes are  is %d",notes);	
+}
+*/
+
+//Exercise - G - A
+/*
+# include <stdio.h>
+# include <math.h>
+int main()
+{   int num,sum,r1,r2,r3,r4,r5;
+	printf("enter an 5 digit number\n");
+	scanf("%d",&num);
+	r1=num%10;
+	num=num/10;
+	r2=num%10;
+	num=num/10;
+	r3=num%10;
+	num=num/10;
+	r4=num%10;
+	num=num/10;
+    sum=r1+r2+r3+r4+num;
+	printf("sum of digits is %d",sum);		
+}
+*/
+
+//Exercise - G - B
+/*
+# include <stdio.h>
+# include <math.h>
+int main()
+{   int x,y;
+    float r,q;
+	printf("enter cartesian coordinates x and y of a point to convert into polar coordinates");
+	scanf("%d %d",&x,&y);
+	r=sqrt((x*x)+(y*y));
+	q=atan(y/x);
+	printf("polar coordinares are %f %f ",r,q);	
+
+	// 1 1 - 1.414214  0.785398 
+}
+*/
+
+//Exercise - G - C
+/*
+# include <stdio.h>
+# include <math.h>
+int main()
+{   float L1,L2,G1,G2,dis,dist,s;
+	printf("enter value of latitudes in degrees");
+	scanf("%f %f",&L1,&L2);
+	printf("enter value of longitudes in degrees");
+	scanf("%f %f",&G1,&G2);
+    dis=(sin(L1)*sin(L2)+cos(L1)*cos(L2)*cos(G2-G1));
+    s=acos(dis);
+    dist=s*3963;
+	printf("distance in nautical miles %f  ",dist);
+	
+	//20.3 23.3 54.5 70.21 - 10935.083008	
+}
+*/
+
+//Exercise - G - D
+/*
+# include <stdio.h>
+# include <math.h>
+int main()
+{   float t,v,wcf;
+	printf("enter values of velocity and temperature");
+	scanf("%f %f",&v,&t);
+	wcf=35.74+0.6215*t+(0.4275*t-35.75)*pow(v,0.16);
+	printf("wind chill factor is %f",wcf);
+	
+	//	5 5 -4.64
+}
+*/
+
+//Exercise - G - E
+/*
+# include <stdio.h>
+# include <math.h>
+int main()
+{   float a;
+	printf("enter angle");
+	scanf("%f",&a);
+	a=a*(3.14159/180.0);
+	printf("sin of angle = %f\n",sin(a));
+	printf("cos of angle = %f\n",cos(a));
+	printf("tan of angle = %f\n",tan(a));
+	printf("cosec of angle = %f\n",1/sin(a));
+	printf("sec of angle = %f\n",1/cos(a));
+	printf("cot of angle = %f\n",1/tan(a));
+	
+	//30
+ //Sin(30.000000) = 0.500000
+//Cos(30.000000) = 0.866026
+//Tan(30.000000) = 0.577350
+//Cosec(30.000000) = 2.000001
+//Sec(30.000000) = 1.154700
+//Cot(30.000000) = 1.732052
+}
+*/
+
+//Exercise - G - F
+/*
+# include <stdio.h>
+# include <math.h>
+int main()
+{   float a,b,c;
+    printf("enter two numbers to swap\n");
+    scanf("%f %f",&a,&b);
+    c=a;
+    a=b;
+    b=c;
+    printf("swapped numbers are a=%f \t b= %f",a,b);
+}
+*/
+
+
+
+
+
+
+
+
+
+
