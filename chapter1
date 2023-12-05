@@ -1,0 +1,63 @@
+// LET US C 
+// CHAPTER 1 
+
+// integer constant 
+/*
+# include <stdio.h>
+int main()
+{
+	int a=-45,b=45;
+	printf("%d %d",a,b);
+}
+*/
+
+// real constant or floating point constant (fractional form / exponential form)
+/*
+# include <stdio.h>
+int main()
+{
+	float a=-4.5,b=4.5;
+	printf("%f %f",a,b);
+	
+	float c=+3.2e-5,d=+3.2E-5,e=+3.2e5,f=+3.2E5;
+	float g=-3.2e-5,h=-3.2E-5,i=-3.2e5,j=-3.2E5;
+
+	printf("\n%f %f %f %f %f %f %f %f",c,d,e,f,g,h,i,j);
+}
+*/
+
+// character constants 
+/*
+# include <stdio.h>
+int main()
+{
+	char a='A',b='B',c='9',d='+';
+	printf("%c %c %c %c",a,b,c,d);
+}
+*/
+
+// variable names 
+/*
+# include <stdio.h>
+int main()
+{
+	int si_int ,pop_e_avg,avg,basic_salary;    //type declaration 
+	float bassal;
+	char code;
+}
+*/
+
+// the first c program 
+/*
+# include <stdio.h>
+int main()
+{
+	int p,n;
+	float r,si;
+	printf("enter values of p n r ");
+	scanf("%d %d %f",&p,&n,&r);
+	si=p*n*r/100;
+	printf("%f\n",si);
+	return 0 ;
+}
+*/
