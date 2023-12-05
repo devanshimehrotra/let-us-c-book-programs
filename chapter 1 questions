@@ -1,0 +1,113 @@
+//chapter 1 questions
+
+//problem 1 
+/*
+# include <stdio.h>
+int main()
+{   float bs,hra,da,gs;
+	printf("enter basic salary of ramesh ");
+	scanf("%f",&bs);
+	da=0.4*bs;
+	hra=0.2*bs;
+	gs=bs+hra+da;
+	printf("basic salary of ramesh is %f \n",bs);
+	printf("house rent allowance of ramesh is %f \n",hra);
+	printf("dearness allowance of ramesh is %f \n",da);
+	printf("gross salary  of ramesh is %f \n",gs);			
+}
+*/
+
+//problem 2
+/*
+# include <stdio.h>
+int main()
+{  float km,m,cm,in,ft;
+   printf("enter distance in kilometres");
+   scanf("%f",&km);
+   m=km*1000;
+   cm=m*100;
+   in=cm/2.54;
+   ft=in/12.0;
+   printf(" distance in kilometres %f\n",km);
+   printf(" distance in metres %f\n",m);
+   printf(" distance in centimetres %f\n",cm);
+   printf(" distance in inches %f\n",in);
+   printf(" distance in feets %f\n",ft);
+   return 0;
+}
+*/
+
+//problem 3
+/*
+# include <stdio.h>
+int main()
+{   float m1,m2,m3,m4,m5,sum;
+	printf("enter  marks in 5 subjects from 100 ");
+	scanf("%f %f %f %f %f",&m1,&m2,&m3,&m4,&m5);
+   sum=m1+m2+m3+m4+m5;
+   printf("aggregate marks are %f\n",sum);
+   printf("percentage  marks are %f\n",sum/5); 
+}
+*/
+
+//exercise E - A 
+/*
+# include <stdio.h>
+int main()
+{   float f,c;
+	printf("enter temperature in fahrenheit ");
+	scanf("%f",&f);
+   c=(f-32)*(5.0/9);
+   printf("temperature in celcius %f\n",c); 
+   // 56.78 -  13.766667
+}
+*/
+
+//exercise E - B 
+/*
+# include <stdio.h>
+int main()
+{   float b,l,r,area,peri,cir,areac;
+	printf("enter length and breadth of the rectangle\n");
+	scanf("%f %f",&l ,&b);
+	printf("enter radius of a circle\n");
+    scanf("%f",&r);
+    area=l*b;
+    peri=2*(l+b);
+    cir=2*(22.0/7)*r;
+	areac= (22.0/7)*r*r;
+	printf("area of rectangle is %f\n",area);
+	printf("perimeter of rectangle is %f\n",peri); 
+	printf("area of circle is %f\n",areac);
+	printf("circumference of circle is %f\n",cir);
+   // 3 2 2 - 6  10 12.56 12.56 
+}
+*/
+
+//exercise E - C 
+/*
+# include <stdio.h>
+int main()
+{   printf("dimensions of paper of size A0 %d %d \n",1189 ,841);
+    printf("dimensions of paper of size A1 %d %d \n",841,1189/2);
+    printf("dimensions of paper of size A2 %d %d \n",1189/2,841/2);
+    printf("dimensions of paper of size A3 %d %d \n",841/2,1189/4);
+    printf("dimensions of paper of size A4 %d %d \n",1189/4,841/4);
+    printf("dimensions of paper of size A5 %d %d \n",841/4,1189/8);
+    printf("dimensions of paper of size A6 %d %d\n ",1189/8,841/8);
+    printf("dimensions of paper of size A7 %d %d\n ",841/8,1189/16);
+    printf("dimensions of paper of size A8 %d %d \n",1189/16,841/16);
+  
+   //A0: 841 x 1189
+   //A1: 594 x 841
+   //A2: 420 x 594
+   //A3: 297 x 420
+   //A4: 210 x 297
+   //A5: 148 x 210
+   //A6: 105 x 148
+   //A7: 74 x 105
+   //A8: 52 x 74 
+}
+*/
+
+
